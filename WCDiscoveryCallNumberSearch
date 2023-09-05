@@ -1,0 +1,207 @@
+<!--Custom CSS for Discovery Search Box Widget-->
+
+<style>
+  #discovery-search-box,
+  #discovery-search-box * {
+      box-sizing: border-box!important;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+  }
+
+  #discovery-search-form {
+      position: relative;
+      width: auto;
+      padding: 1.25em 2em 1em;
+      background-color: transparent!important;
+      color: #333!important;
+      z-index: 1;
+      line-height: initial;
+  }
+
+  #discovery-search-index {
+      position: relative;
+      height: 3em;
+      background-color: white;
+      color: #333333;
+  }
+
+  #discovery-search-index:after {
+      content: '\f078';
+      display: block;
+      font-family: 'FontAwesome', sans-serif;
+      position: absolute;
+      top: 0;
+      right: .5em;
+      line-height: 3em;
+      z-index: 5;
+  }
+
+  #discovery-search-index #discovery-search-index-select {
+      position: relative;
+      z-index: 10;
+      height: 100%;
+      font-size: 1em;
+      color: #333333;
+      padding: 0 2em 0 1em;
+      background-color: transparent;
+      border-top: 1px solid #ccc;
+      border-right: 0;
+      border-bottom: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+      border-image: initial;
+      border-radius: 0;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+  }
+
+  select::-ms-expand {
+      display: none;
+  }
+
+  #discovery-search {
+      display: inline-block;
+      width: 100%;
+      height: 3em;
+      font-size: 1em;
+      padding: 0 0.5em;
+      margin-bottom: 0.5em;
+      color: black;
+      background-color: white;
+      border-radius: 0;
+      border: 1px solid #ccc;
+  }
+
+  #discovery-search-button {
+      display: inline-block;
+      padding: .25em .5em;
+      font-size: 1em;
+      height: 3em;
+      width: auto;
+      min-width: 6em;
+      color: black;
+      background-color: #faaf00;
+      margin-left: .5em;
+      border-radius: 0.25em;
+      border: none;
+      background-image: none;
+      float: none;
+      text-align: center
+  }
+
+  #discovery-search-button:hover {
+      font-weight: bold;
+      border: 1px white;
+      outline: 1px black;
+  }
+
+  #discovery-search-advanced-link {
+      display: flex;
+      width: 100%;
+      margin-top: 1em;
+      justify-content: right;
+  }
+
+  /*Make Search Box Responsive*/
+
+  @media (max-width: 767px) {
+      #discovery-search-form>div>div {
+          flex-wrap: wrap;
+      }
+      #discovery-search-form {
+          padding: 0px;
+      }
+      #discovery-search-index {
+          border-radius: .25em;
+          border: 1px solid #ccc;
+          height: 2.25em;
+          width: 6em;
+          padding: 0;
+      }
+      #discovery-search-index:after {
+          content: '\f107';
+          line-height: 2.75;
+          font-size: .8em;
+      }
+    #discovery-search-index #discovery-search-index-select {
+          border: none;
+          line-height: 2.25em;
+          padding: 0 .5em 0;
+      }
+      #discovery-search {
+          border-radius: .25em;
+          margin: 0;
+          height: 2.25em;
+      }
+      #discovery-search-button {
+          height: 2em;
+          margin: 0;
+          padding: 0;
+      }
+      #discovery-search-advanced-link {
+          justify-content: left;
+      }
+  }
+
+  @media (max-width: 479px) {
+      #discovery-search-index {
+          height: 2em;
+      }
+      #discovery-search-button {
+          height: 2em;
+          font-size: .9em;
+      }
+  }
+  </style>
+
+<!--WorldCat Discovery Search Box-->
+
+  <div id="discovery-search-box">
+    <form id="discovery-search-form">
+      <div style="display: flex; width: 100%; margin-top: 1em;">
+        <div style="display: flex; flex-grow: 1;">
+          <div id="discovery-search-index">
+            <select id="discovery-search-index-select">
+              <option selected="selected" value="nu">Call Number</option>
+            </select>
+          </div>
+          <input id="discovery-search" autocomplete="off" required="" placeholder="Search for resources by call number." type="text"/>
+          <input id="discovery-search-button" type="submit" value="SEARCH" />
+      </div>
+    </div>
+      <div id="discovery-search-advanced-link">
+        <p><a href="https://bsclibrary.on.worldcat.org/advancedsearch" target="_blank" style="color: white; font-size: 1em; font-weight: normal;">Advanced Search</a></p>
+      </div>
+  </form>
+</div>
+
+<!--End Discovery Search Box HTML-->
+
+<!--Javascript for WorldCat Discovery Search-->
+
+<script>
+  (function(){var d,w,h,form,input,urlBase,active,facets,r,rt,a,f,select,query;
+    d=document;
+    w=window;
+    r=(function(){try{return w.self!==w.top;
+    }catch(e){return true;
+    }})();
+    rt=r?'_blank':'_self';
+    a=d.getElementById('discovery-advanced-search');
+    if(a)a.setAttribute('target',rt);
+    h=function(e){if(e.keyCode&&e.keyCode!==13)return;
+    };
+    form=d.getElementById('discovery-search-form');
+    input=d.getElementById('discovery-search');
+    select=d.getElementById('discovery-search-index-select');
+    urlBase = 'https://bsclibrary.on.worldcat.org/external-search?queryString=#T#&databaseList=283&clusterResults=on&stickyFacetsChecked=off&changedFacet=stickyFacetsChecked&baseScope=wz%3A5766&sortKey=BEST_MATCH#F#';
+    form.addEventListener('submit',function(e){e.preventDefault();
+    e.stopPropagation();
+    f='';
+    query=input.value;
+    if(select){var index=select.options[select.selectedIndex].value;
+    if(index!=='kw')query=select.options[select.selectedIndex].value+':'+query;
+    }w.open(urlBase.replace('#T#',encodeURIComponent(query)).replace('#F#',f),rt);
+    });
+    })();
+</script>
