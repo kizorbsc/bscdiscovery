@@ -1,0 +1,106 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<style>
+#s-lg-embedded-search-widget-1641749994593,
+#s-lg-embedded-search-widget-1641749994593* {
+box-sizing: border-box!important;
+margin: 0;
+padding: 0;
+text-align: left;
+}
+
+#research-guides-search-form {
+position: relative;
+width: auto;
+padding: 1.25em 2em 2em;
+background-color: transparent!important;
+color: #333!important;
+z-index: 1;
+line-height: initial;
+}
+
+#s-lg-guide-search-1641749994593 {
+    display: inline-block;
+    width: 100%;
+    height: 3em;
+    font-size: 1em;
+    padding: 0 0.5em;
+    margin-bottom: 0.5em;
+    color: black;
+    background-color: white;
+    border-radius:0;
+    border: 1px solid #ccc;
+}
+
+#research-guides-search-button {
+      padding: 0.75em 1.5em;
+      font-size: 1em;
+      height: 3em;
+      min-width: 8em;
+      color: black;
+      background-color: #faaf00;
+      margin: 0 0 0 0.5em;
+      border-radius: 0.25em;
+      border: none;
+      background-image: none;
+      float: none;
+      text-align: center;
+}
+
+#research-guides-search-button:hover {
+font-weight: bold;
+border: 1px solid white;
+outline: 1 px solid black;
+}
+
+#research-guides-link {
+display: flex;
+width: 100%;
+margin-top: 1em;
+justify-content: right;
+}
+
+@media (max-width: 767px) {
+#research-guides-search-form>div>div {
+    flex-wrap: wrap;
+}
+#research-guides-search-form {
+    padding: 0;
+}
+#research-guides-link {
+   justify-content: left;
+}
+}
+</style>
+
+<div id="s-lg-embedded-search-widget-1641749994593" class="s-lg-embedded-search-widget" >
+	<form id="research-guides-search-form" role="search" method="GET" action="https://library.bsc.edu/srch.php" target="_blank">
+             <div style="display: flex; width: 100%; margin-top: 1em;">
+  		    <div style="display: flex; flex-grow: 1;">
+				<label class="control-label sr-only" for="s-lg-guide-search-1641749994593">Guide Search Terms</label>
+				<input id="s-lg-guide-search-1641749994593"class="s-lg-form-control" name="q"  type="text" placeholder="Search for research guides by subject or keyword.">
+				<button id="research-guides-search-button" class="s-lg-btn-api-drop btn btn-default" type="submit">SEARCH</button>
+                     </div>
+               </div>
+               <div id="research-guides-link">
+                   <p><a href="https://library.bsc.edu/guides" target="_blank" style="color: white; font-size: 1em; font-weight: normal;">Browse Research Guides</a></p>
+               </div>
+	</form>
+</div>
+
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+        if(!d.getElementById(id)){js=d.createElement(s);
+          js.id=id;
+          js.src=p+"://lgapi-us.libapps.com/widgets.php?site_id=1169&widget_type=7&widget_embed_type=1&output_format=1&search_box_type=1&group_id=0&placeholder_text=Enter+Search+Words&button_text=Search&widget_height=&widget_width=250&config_id=1641749994593";
+          fjs.parentNode.insertBefore(js,fjs);
+        }}(document,"script","s-lg-widget-script-1641749994593");
+      </script>
+<script>
+	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+	if(!d.getElementById(id)){js=d.createElement(s);
+		js.id=id;js.src=p+"://lgapi-us.libapps.com/widgets.php?site_id=1169&widget_type=7&widget_embed_type=1&output_format=1&search_box_type=2&group_id=0&placeholder_text=Enter+Search+Words&button_text=SEARCH&widget_height=&widget_width=400&config_id=1641552251940";
+		fjs.parentNode.insertBefore(js,fjs);
+	}
+}(document,"script","s-lg-widget-script-1641552251940");
+</script>
