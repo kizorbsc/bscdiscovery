@@ -1,0 +1,168 @@
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<style>
+  #article-search-box {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+  }
+
+  #article-search-form {
+      position: relative;
+      width: auto;
+      padding: 1.25em 2em 2em;
+      background-color: transparent;
+      z-index: 1;
+      line-height: initial;
+  }
+
+  #article-search-index {
+      position: relative;
+      height: 3em;
+      background-color: white;
+      color: black;
+  }
+
+  #article-search-index:after {
+      content: '\f078';
+      display: block;
+      font-family: 'FontAwesome', sans-serif;
+      position: absolute;
+      top: 0;
+      right: .5em;
+      line-height: 3em;
+      z-index: 5;
+      color: #333333;
+  }
+
+  #article-search-index #article-search-index-select {
+      position: relative;
+      z-index: 10;
+      height: 100%;
+      font-size: 1em;
+      padding: 0 2em 0 1em;
+      background-color: transparent;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+      border-right: 0;
+      border-radius: .25em 0 0 .25em;
+      color: #333333;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+  }
+
+  select::-ms-expand {
+      display: none;
+  }
+
+  #discovery-search-articles {
+      display: inline-block;
+      width: 100%;
+      height: 3em;
+      font-size: 1em;
+      padding: 0 .5em;
+      margin-bottom: 1em;
+      color: black;
+      background-color: white;
+      border-radius: 0 .25em .25em 0;
+      border: 1px solid #ccc;
+  }
+
+  #article-search-button {
+      padding: .25em;
+      font-size: 1em;
+      height: 2.95em;
+      width: 8em;
+      color: black;
+      background-color: #faaf00;
+      border-radius: 0.25em;
+      text-align: center;
+      margin-left: .5em;
+      border: none;
+  }
+
+  #article-search-button:hover {
+      font-weight: bold;
+      outline: black;
+  }
+
+  #article-search-advanced-link {
+      display: flex;
+      width: 100%;
+      margin-top: 1em;
+      justify-content: right;
+  }
+
+  @media (max-width: 767px) {
+      #article-search-form>div>div {
+          flex-wrap: wrap;
+      }
+      #article-search-form {
+          padding: 0;
+      }
+      #article-search-index #article-search-index-select {
+          border: 1px solid #ccc;
+          border-radius: .25em;
+      }
+      #discovery-search-articles {
+          border-radius: .25em;
+      }
+      #article-search-button {
+          margin: 0;
+      }
+      #article-search-advanced-link {
+          justify-content: left;
+      }
+  }
+
+</style>
+
+<div id="article-search-box">
+  <form id="article-search-form">
+    <div style="display: flex; width: 100%; margin-top: 1em;">
+      <div style="display: flex; flex-grow: 1;">
+        <div id="article-search-index">
+          <select id="article-search-index-select">
+            <option selected="selected" value="kw">Keyword</option>
+            <option value="ti">Title</option>
+            <option value="su">Subject</option>
+            <option value="au">Author</option>
+          </select>
+        </div>
+        <input id="discovery-search-articles" autocomplete="off" required="" placeholder="Limit your search to articles." type="text" />
+        <input id="article-search-button" type="submit" value="SEARCH" />
+    </div>
+  </div>
+        <div id="article-search-advanced-link">
+          <p><a href="https://bsclibrary.on.worldcat.org/advancedsearch" target="_blank" style="color: white; font-size: 1em; font-weight: normal;">Advanced Search</a></p>
+        </div>
+  </form>
+</div>
+
+<script>
+  (function(){var d,w,h,form,input,urlBase,active,facets,r,rt,a,f,select,query;
+    d=document;
+    w=window;
+    r=(function(){try{return w.self!==w.top;
+    }catch(e){return true;
+    }})();
+    rt=r?'_blank':'_self';
+    a=d.getElementById('discovery-advanced-search-article');
+    if(a)a.setAttribute('target',rt);
+    h=function(e){if(e.keyCode&&e.keyCode!==13)return;
+    };
+    form=d.getElementById('article-search-form');
+    input=d.getElementById('discovery-search-articles');
+    select=d.getElementById('article-search-index-select');
+    urlBase='https://bsclibrary.on.worldcat.org/external-search?subformat=Artchap%3A%3Aartchap_artcl&subformat=Artchap%3A%3Aartchap_digital&queryString=#T#&databaseList=638&clusterResults=on&stickyFacetsChecked=off&changedFacet=stickyFacetsChecked&baseScope=wz%3A5766&sortKey=BEST_MATCH#F#';
+    form.addEventListener('submit',function(e){e.preventDefault();
+    e.stopPropagation();
+    f='';
+    query=input.value;
+    if(select){var index=select.options[select.selectedIndex].value;
+    if(index!=='kw')query=select.options[select.selectedIndex].value+':'+query;
+    }w.open(urlBase.replace('#T#',encodeURIComponent(query)).replace('#F#',f),rt);
+    });
+    })();
+</script>
