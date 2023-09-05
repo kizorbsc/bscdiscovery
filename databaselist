@@ -1,0 +1,359 @@
+<!--Custom CSS for Database Search Box Widget-->
+
+<style>
+#database-search-form {
+    position: relative;
+    width: auto;
+    padding: 1em 2em .5em;
+    background-color: transparent!important;
+    color: #333!important;
+    z-index: 1;
+    line-height: initial
+}
+
+#s-lg-guide-search-1641552251940 {
+	display: inline-block;
+	width: 100%;
+	height: 2.5em;
+	font-size: 1em;
+	padding: 0 0.5em;
+	color: black;
+	background-color: white;
+	border-radius:.25em;
+	border: 1px solid #ccc;
+}
+
+#database-search-button {
+    display: inline;
+    padding: .25em .5em;
+    font-size: 1em;
+    height: 2.5em;
+    width: 7em;
+    color: black;
+    background-color: #faaf00;
+    margin-left: .5em;
+    border-radius: 0.25em;
+    border: none;
+    background-image: none;
+    float: none;
+    text-align: center
+}
+
+#database-search-button:hover {
+  	font-weight: bold;
+  	border: 1px solid white;
+    outline: 1px solid black;
+}
+
+/*Make Search Box Responsive*/
+
+@media (max-width: 767px) {
+	#database-search-form>div>div {
+		flex-wrap: wrap;
+	}
+        #database-search-form {
+                padding: 0px;
+        }
+        #database-search-button {
+                margin: 0;
+    }
+}
+</style>
+
+<form id="database-search-form" role="search" method="GET" action="https://library.bsc.edu/az.php" target="_blank">
+	<div style="display: flex; width: 100%; margin-top: 1em;">
+		<div style="display: flex; flex-grow: 1;">
+			<label class="control-label sr-only" for="s-lg-guide-search-1641552251940">Guide Search Terms.</label>
+			<input class="s-lg-form-control" name="q" id="s-lg-guide-search-1641552251940"type="text" placeholder="Search for databases by title, keyword, or subject."/>
+			<button id="database-search-button" class="s-lg-btn-api-drop btn btn-default" type="submit">SEARCH</button>
+		</div>
+	</div>
+</form>
+
+<script>
+	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+	if(!d.getElementById(id)){js=d.createElement(s);
+		js.id=id;js.src=p+"://lgapi-us.libapps.com/widgets.php?site_id=1169&widget_type=7&widget_embed_type=1&output_format=1&search_box_type=2&group_id=0&placeholder_text=Enter+Search+Words&button_text=SEARCH&widget_height=&widget_width=400&config_id=1641552251940";
+		fjs.parentNode.insertBefore(js,fjs);
+	}
+}(document,"script","s-lg-widget-script-1641552251940");
+</script>
+
+<!-- Begin Database Selection Menu -->
+
+<style>
+
+	#s-lg-frm-az-widget-1641792756325 {
+		position: relative;
+		width: auto;
+		padding: 0 2em 0;
+		background-color: transparent!important;
+		color: #333!important;
+		z-index: 1;
+		line-height: initial
+	}
+
+	#s-lg-sel-az-widget-1641792756325 {
+		display: inline-block;
+		width: 100%;
+		height: 2.5em;
+		font-size: 1em;
+		padding: 0 0.5em;
+		color: #333333;
+		background-color: white;
+		border-radius:.25em;
+		border: 1px solid #ccc;
+	}
+
+#database-select-button {
+    display: inline;
+    padding: .25em .5em;
+    font-size: 1em;
+    height: 2.5em;
+    width: 7em;
+    color: black;
+    background-color: #faaf00;
+  	margin-left: .5em;
+    border-radius: 0.25em;
+    border: none;
+    background-image: none;
+    float: none;
+    text-align: center
+	}
+
+ #database-select-button:hover {
+	 font-weight: bold;
+	 border: 1px solid white;
+	 outline: 1px solid black;
+ }
+
+	#database-list-link {
+		display: flex;
+		width: 100%;
+		margin-top: 1.5em;
+		justify-content: right;
+	}
+
+	@media (max-width: 767px){
+		#s-lg-frm-az-widget-1641792756325>div>div {
+			flex-wrap: wrap;
+		}
+
+		#s-lg-frm-az-widget-1641792756325 {
+			padding: 0px;
+		}
+
+		#s-lg-sel-az-widget-1641792756325 {
+			border-radius: .25em;
+		}
+
+		#database-select-button {
+			margin: 0;
+			border-radius: .25em;
+		}
+	}
+
+	@media (max-width: 479px){
+		#database-list-link {
+			justify-content: left;
+                        margin: .5em; 
+		}
+	}
+</style>
+
+  <form id="s-lg-frm-az-widget-1641792756325" class="form-inline" role="form">
+    <div style="display: flex; width: 100%; margin-top: 1em;">
+     <div style="display: flex; flex-grow: 1;">
+       <label for="s-lg-sel-az-widget-1641792756325" class="sr-only">Select a Database...</label>
+        <select id="s-lg-sel-az-widget-1641792756325" class="form-control">
+          <option value="">Select a Database...</option>
+  <option value="http://ezproxy.bsc.edu/login?url=https://search.alexanderstreet.com/cbsv">60 Minutes: 1997-2014</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://www.chronicle.com/newsletter/academe-today">Academe Today: Newsletter of the Chronicle of Higher Education</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=aph">Academic Search Premier</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://video.alexanderstreet.com/channel/academic-video-online">Academic Video Online (AVON)</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://www-accessscience-com.ezproxy.bsc.edu/">AccessScience</option>
+    <option value="https://www.fulcrum.org/heb?locale=en&amp;user_access=oa">ACLS Humanities Open Access Ebooks</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://dl-acm-org">ACM Digital Library</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://pubs.acs.org/about.html">ACS (American Chemical Society) Publications</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://infoweb.newsbank.com/apps/readex/welcome?p=EANX">African American Newspapers 1827-1956</option>
+    <option value="http://agricola.nal.usda.gov/">AGRICOLA</option>
+    <option value="http://www.alabamamosaic.org/">Alabama Mosaic</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://www.avl.lib.al.us/">Alabama Virtual Library</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;authtype=ip&amp;db=awh">Alt HealthWatch</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;authtype=ip&amp;db=ahl">America: History and Life</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;authtype=ip&amp;db=acw">American Civil War, 1855-1868 Periodicals</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;authtype=ip&amp;db=pdh">APA PsycArticles</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;authtype=ip&amp;db=psyh">APA PsycINFO</option>
+    <option value="https://researchworks.oclc.org/archivegrid/">ArchiveGrid</option>
+    <option value="https://aata.getty.edu/primo-explore/search?vid=AATA">Art &amp; Archaeology Technical Abstracts (AATA)</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;authtype=ip&amp;db=aft">Art Full Text</option>
+    <option value="http://www.artcyclopedia.com/">Artcyclopedia</option>
+    <option value="http://www.arxiv.org">arXiv</option>
+    <option value="http://www.realpageslive.com/">AT&amp;T White Pages and Yellow Pages Search</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;authtype=ip&amp;db=rfh">ATLA Religion Database with ATLASerials</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://www.atozacademics.com/">AtoZdatabases Academic</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://apps.brepolis.net/LTool/Entrance.aspx?w=19">Bibliography of British and Irish History (BBIH)</option>
+    <option value="https://primo.getty.edu/primo-explore/search?vid=BHA">Bibliography of the History of Art (BHA) &amp; Répertoire internationa…</option>
+    <option value="http://www.al.com/birmingham">Birmingham News</option>
+    <option value="https://www.bloomsburycollections.com/search?newSearchRecord&amp;browse&amp;product=bloomsburyOpenAccess">Bloomsbury Open Access Ebook Collection</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://www.booksinprint.com">Books In Print</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://search.eb.com/">Britannica Academic</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/BIE?u=birm89742">Business Insights Essentials</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;authtype=ip&amp;db=buh">Business Source Premier</option>
+    <option value="http://catalog.gpo.gov/">Catalog of U.S. Government Publications</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://www.choicereviews.org/">Choice Reviews Online</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://www.chronicle.com">Chronicle of Higher Education</option>
+    <option value="http://chroniclingamerica.loc.gov/">Chronicling America: Historic American Newspapers</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://www.churchillarchive.com">Churchill Archive</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://firstsearch.oclc.org/;dbname=ClasePeriodica;done=http://www.bsc.edu/library;FSIP">ClasePeriodica</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://library.cqpress.com/cqresearcher">CQ Researcher</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://www.credoreference.com">Credo Reference</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://www.csmusic.net/">CS Music</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/DLBC?u=birm89742">Dictionary of Literary Biography</option>
+    <option value="https://library.bsc.edu/digital_theatre">Digital Theatre+</option>
+    <option value="https://docsouth.unc.edu/">Documenting the American South (DocSouth)</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;authtype=ip&amp;db=e000xna">EBSCO eBooks Academic Collection</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;authtype=ip&amp;db=ndh">EBSCO Nonfiction Collection</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;authtype=ip&amp;db=nlebk">EBSCOhost Ebooks</option>
+    <option value="https://login.ezproxy.bsc.edu/login?url=https://search.ebscohost.com">EBSCOhost Research Platform</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;authtype=ip&amp;db=ecn">EconLit</option>
+    <option value="http://www.encyclopediaofalabama.org/">Encyclopedia of Alabama</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;authtype=ip&amp;db=eric">ERIC (EBSCOhost)</option>
+    <option value="http://www.eric.ed.gov/">ERIC (U.S. Department of Education)</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://www.proquest.com/?accountid=8631&amp;selectids=10000018">Ethnic NewsWatch</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://www.europeanamericana.com/">European Views of the Americas</option>
+    <option value="https://www.europeana.eu/en/collections">Europeana</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://ffusa.infobase.com/PortalPlayLists.aspx?wid=101657">Feature Films for Education</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=f3h">Film and Television Literature Index with Full Text</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://fod.infobase.com/PortalPlayLists.aspx?wid=101657&amp;level=Subject&amp;sid=698">Films on Demand: Communication Collection</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://search.ebscohost.com/login.asp?profile=web&amp;defaultdb=funk">Funk &amp; Wagnall's New World Encyclopedia</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/AONE?u=birm89742">Gale Academic OneFile</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/EAIM?u=birm89742">Gale Academic OneFile Select</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/GVRL?u=birm89742">Gale eBooks</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://find.galegroup.com/gtx/start.do?prodId=ITOF&amp;userGroupName=birm89742">Gale General OneFile</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/HWRC?u=birm89742">Gale Health and Wellness Resource Center</option>
+    <option value="https://link-gale-com.ezproxy.bsc.edu/apps/CA/?u=avlr&amp;id=alabama2r">Gale Literature: Contemporary Authors</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/G-Scrib?u=birm89742">Gale Literature: Scribner Writers Series</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/ITBC?u=birm89742">Gale OneFile Business</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/PPCM?u=birm89742">Gale OneFile: Communications and Mass Media Collection</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/PROF?u=birm89742">Gale OneFile: Educator's Reference Complete</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://go.gale.com/ps/start.do?p=PPFA&amp;u=birm89742">Gale OneFile: Fine Arts</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://go.gale.com/ps/start.do?p=GPS&amp;u=birm89742">Gale Power Search</option>
+    <option value="http://www.getty.edu/publications/virtuallibrary">Getty Publications Virtual Library</option>
+    <option value="http://books.google.com/">Google Books</option>
+    <option value="http://scholar.google.com">Google Scholar</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://firstsearch.oclc.org/dbname=GPO;done=http:/www.bsc.edu/library;FSIP">GPO Monthly Catalog</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=8gh">GreenFILE</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://infotrac.galegroup.com/itweb/birm89742?db=GRNR">GREENR - Global Reference on the Environment, Energy, and Natural …</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://www.oxfordartonline.com/groveart">Grove Art Online</option>
+    <option value="https://library.bsc.edu/harpers">Harper's Magazine</option>
+    <option value="http://www.hathitrust.org/">HathiTrust Digital Library</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://search.ebscohost.com/login.asp?profile=web&amp;defaultdb=hxh">HealthSource: Consumer Edition</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://search.ebscohost.com/login.asp?profile=web&amp;defaultdb=hch">HealthSource: Nursing/Academic Edition</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://heinonline.org/HOL/Welcome">Hein Online</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://search.ebscohost.com/login.aspx?authtype=cookie,ip,uid&amp;profile=ehost&amp;defaultdb=hia">Historical Abstracts</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://search.ebscohost.com/login.aspx?profile=ehost&amp;defaultdb=khh">History Reference Center</option>
+    <option value="http://lcweb2.loc.gov/hlas/">HLAS Online - Handbook of Latin American Studies</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://go.galegroup.com/ps/start.do?p=IFME&amp;u=birm89742">Informe</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://www.proquest.com/ibss?accountid=8631">International Bibliography of the Social Sciences (IBSS)</option>
+    <option value="http://imslp.org/">International Music Score Library Project</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://jamanetwork.com/journals/jama">JAMA Online</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://www.jstor.org/">JSTOR</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://infotrac.galegroup.com/itweb/birm89742?db=LT">LegalTrac</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://web2.infotrac.galegroup.com/itw/infomark/0/1/1/purl=rc6_CLC?sw_aep=birm89742">Literature Criticism Online</option>
+    <option value="http://literature.proquest.com.ezproxy.bsc.edu/">Literature Online (LION)</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://find.galegroup.com.ezproxy.bsc.edu/menu/start?prod=litrc-31&amp;usergroupname=birm89742">Literature Resource Center</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://go.galegroup.com/ps/start.do?p=LITF&amp;u=(birm89742)&amp;authCount=1&amp;aty=ip">LitFinder</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://apps.brepolis.net/LTool/Entrance.aspx?w=30">L’Année Philologique (LPA)</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://search.ebscohost.com/login.asp?profile=web&amp;defaultdb=ulh">MAS Ultra - School Edition</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://search.ebscohost.com/login.asp?profile=web&amp;defaultdb=f5h">MasterFILE Premier</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://www.ams.org/mathscinet">MathSciNet (via AMS)</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;authtype=ip&amp;db=msn">MathSciNet (via EBSCOhost)</option>
+    <option value="http://medlineplus.gov/">Medline Plus</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://search.ebscohost.com/login.asp?profile=web&amp;defaultdb=mth">Military and Government Collection</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;authtype=ip,uid&amp;db=kah">MLA Directory of Periodicals</option>
+    <option value="https://library.bsc.edu/MLA_Handbook">MLA Handbook</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.asp?direct=true&amp;authtype=ip&amp;db=mzh">MLA International Bibliography</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://musicaltheatersongs.com/">Musical Theater Songs</option>
+    <option value="https://library.bsc.edu/national_theatre">National Theatre Collection</option>
+    <option value="https://ezproxy.bsc.edu/login?url=https://BSC.NaxosMusicLibrary.com">Naxos Music Library</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://www.proquest.com/hnpnewyorktimeswindex?accountid=8631">New York Times (The Historial New York Times with Index)</option>
+    <option value="https://nytimesineducation.com/access-nyt/birmingham-southern-college-birmingham-al/">New York Times - Group Academic Pass</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://search.ebscohost.com/login.asp?profile=web&amp;defaultdb=nfh">Newspaper Source</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://nexisuni.com">Nexis Uni</option>
+    <option value="https://projects.propublica.org/nonprofits/">Nonprofit Explorer</option>
+    <option value="http://oaister.worldcat.org/">OAlster Union catalog of digital resources</option>
+    <option value="https://biblioboard.com/opendissertations/">OpenDissertations</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://infotrac.galegroup.com/itweb?db=OVRC">Opposing Viewpoints Resource Center</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://academic.oup.com/journals">Oxford Academic Journals</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://www.oxfordartonline.com/">Oxford Art Online</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://www.oed.com">Oxford English Dictionary</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://www.oxfordislamicstudies.com/">Oxford Islamic Studies Online</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://www.oxfordmusiconline.com/">Oxford Music Online</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://www.oxfordreference.com/browse?btog=book&amp;isQuickSearch=true&amp;avail_0=unlocked">Oxford Reference Online</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://www.universitypressscholarship.com/browse?submittedFilterId=by-availability&amp;isQuickSearch=true&amp;pageSize=20&amp;sort=titlesort&amp;avail_3=unlocked&amp;avail_4=free&amp;avail_5=open">Oxford Scholarship Online
+   </option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://search.proquest.com/pais?accountid=8631">PAIS International and PAIS Archives</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://firstsearch.oclc.org/;dbname=PapersFirst;done=http://www.bsc.edu/library;FSIP">Papers First</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://search.ebscohost.com/login.aspx?profile=ehost&amp;defaultdb=phl">Philosopher's Index</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://search.proquest.com/physicaleducation?accountid=8631">Physical Education Index</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;authtype=ip&amp;db=pwh">Points of View Reference Center</option>
+    <option value="http://www.loc.gov/pictures/">Prints &amp; Photographs Online Catalog (PPOC)</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://firstsearch.oclc.org/;dbname=Proceedings;done=http://www.bsc.edu/library;FSIP">ProceedingsFirst</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://search.ebscohost.com/login.asp?profile=web&amp;defaultdb=tfh">Professional Development Collection</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://muse.jhu.edu.ezproxy.bsc.edu/">Project MUSE Scholarly Journals Online</option>
+    <option value="https://learning.pronunciator.com/getstarted.php?library_id=139979228">Pronunciator</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://www.proquest.com/criminology?accountid=8631">ProQuest Criminology Collection</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://www.proquest.com/ebookcentral1?accountid=8631">ProQuest Ebook Central</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://www.proquest.com/education1?accountid=8631">ProQuest Education Database</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://www.proquest.com/libraryinformation?accountid=8631">ProQuest Library &amp; Information Science Collection</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://www.proquest.com/linguistics1?accountid=8631">ProQuest Linguistics Collection</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://www.proquest.com/politics?accountid=8631">ProQuest Politics Collection</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://www.proquest.com/publiccontent?accountid=8631">ProQuest Publicly Available Content</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://search.proquest.com/pqrl?accountid=8631">ProQuest Research Library Complete</option>
+    <option value="https://www.proquest.com/sociology1?accountid=8631">ProQuest Sociology Collection</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://www.ncbi.nlm.nih.gov/pubmed/?otool=albsclib/?otool=albsclib">PubMed/Medline</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://isiknowledge.com/medline">PubMed/Medline -- BSC Subscription</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://search.ebscohost.com/login.aspx?profile=ehost&amp;defaultdb=rgr">Readers' Guide Retrospective</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://search.ebscohost.com/login.asp?profile=web&amp;defaultdb=bwh">Regional Business News</option>
+    <option value="http://rtabstracts.org/search/">Religious and Theological Abstracts</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://www.rclweb.net/">Resources for College Libraries</option>
+    <option value="https://www.jstor.org/site/reveal-digital/">Reveal Digital (via JSTOR)</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;custid=s5149852&amp;groupid=main&amp;profile=ehost&amp;defaultdb=ram">RILM Abstracts of Music Literature</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://journals.sagepub.com/">Sage Journals</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://www.science.org/journal/science">Science</option>
+    <option value="https://library.bsc.edu/science_careers">Science Careers</option>
+    <option value="http://www.science.gov/">Science.gov</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://sciencedirect.com/">ScienceDirect</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://search.ebscohost.com/login.aspx?profile=ehost&amp;defaultdb=sla">Slavery &amp; Abolition, 1789-1887</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://heinonline.org/HOL/Index?collection=slavery&amp;set_as_cursor=clear">Slavery in America and the World: History, Culture &amp; Law</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://www.proquest.com/socscijournals?accountid=8631">Social Science Database</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://www.proquest.com/sociology1?accountid=8631">Sociological Abstracts</option>
+    <option value="http://na.capitaliq.com/ip/BIRSOU">Standard &amp; Poor's Net Advantage</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://statista.com/">Statista</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://statabs.proquest.com">Statistical Abstract of the US</option>
+    <option value="https://alexanderstreet.com/products/empire-suffrage-syllabus">The Empire Suffrage Syllabus</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/G-Twayne?u=birm89742">Twayne's Authors Series</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://www.proquest.com/usnews?accountid=8631">U.S. Newsstream</option>
+    <option value="http://ovidsp.ovid.com/ovidweb.cgi?T=JS&amp;NEWS=n&amp;CSC=Y&amp;ID=avlib999&amp;PASSWORD=welcome1&amp;PAGE=main&amp;D=huaa20">Visible Body</option>
+    <option value="http://ezproxy.bsc.edu/login?url=https://www.webofscience.com">Web of Science</option>
+    <option value="https://data.worldbank.org/">World Bank Open Data</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://firstsearch.oclc.org/dbname=WorldCat;done=http://www.bsc.edu/library;FSIP">WorldCat -- BSC Subscription</option>
+    <option value="http://www.worldcat.org/">WorldCat -- Free</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://firstsearch.oclc.org/dbname=WorldCatDissertations;done=http://www.bsc.edu/library;FSIP">WorldCat Dissertations</option>
+    <option value="http://ezproxy.bsc.edu/login?url=http://search.proquest.com/wpsa?accountid=8631">WorldWide Political Science Abstracts</option>
+</select>
+        <button id="database-select-button" class="s-lg-btn-api-drop btn btn-default" onclick="var sel=document.getElementById('s-lg-sel-az-widget-1641792756325'); var url=sel.options[sel.options.selectedIndex].value; if ( url ) { var win = window.open(url); if ( !win ) { document.location.href = url; } return false; } else { return false; }">SELECT</button>
+      </div>
+		</div>
+    <div id="database-list-link">
+      <p><a href="https://library.bsc.edu/az.php" target="_blank" style="color: white; font-size: 1em; font-weight: normal;">Browse the A to Z List</a></p>
+    </div>
+  </form>
+
+<script>
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+  if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://lgapi-us.libapps.com/widgets.php?site_id=1169&widget_type=2&search_terms=&search_match=2&subject_ids=&sort_by=name&list_format=2&drop_text=Select+a+Database...&output_format=1&load_type=2&enable_description=0&widget_title=A-Z+Database+List&widget_height=250&widget_width=100%25&widget_link_color=2954d1&widget_embed_type=1&num_results=0&enable_more_results=1&window_target=2&config_id=1641792756325";
+  fjs.parentNode.insertBefore(js,fjs);
+}}(document,"script","s-lg-widget-script-1641792756325");
+</script>
