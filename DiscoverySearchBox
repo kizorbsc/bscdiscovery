@@ -1,26 +1,15 @@
-
-<link rel="stylesheet" type="text/css" href="style.css">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-
-
 <!--Custom CSS for Discovery Search Box Widget-->
+
 <style>
-  #discoverySearch,
-  #discoverySearch * {
+  #discovery-search-box,
+  #discovery-search-box * {
       box-sizing: border-box!important;
       margin: 0;
       padding: 0;
       text-align: left;
   }
 
-  #discoverySearchForm {
+  #discovery-search-form {
       position: relative;
       width: auto;
       padding: 1.25em 2em 1em;
@@ -30,14 +19,14 @@
       line-height: initial;
   }
 
-  #discoverySearchFieldDropdown {
+  #discovery-search-index {
       position: relative;
       height: 3em;
       background-color: white;
       color: #333333;
   }
 
-  #discoverySearchFieldDropdown:after {
+  #discovery-search-index:after {
       content: '\f078';
       display: block;
       font-family: 'FontAwesome', sans-serif;
@@ -48,7 +37,7 @@
       z-index: 5;
   }
 
-  #discoverySearchFieldDropdown #discoverySearchField {
+  #discovery-search-index #discovery-search-index-select {
       position: relative;
       z-index: 10;
       height: 100%;
@@ -70,7 +59,7 @@
       display: none;
   }
 
-  #discoveryQueryString {
+  #discovery-search {
       display: inline-block;
       width: 100%;
       height: 3em;
@@ -83,7 +72,7 @@
       border: 1px solid #ccc;
   }
 
-  #discoverySearchButton {
+  #discovery-search-button {
       display: inline-block;
       padding: .25em .5em;
       font-size: 1em;
@@ -100,13 +89,13 @@
       text-align: center
   }
 
-  #discoverySearchButton:hover {
+  #discovery-search-button:hover {
       font-weight: bold;
       border: 1px white;
       outline: 1px black;
   }
 
-  #discoveryAdvancedSearchLink {
+  #discovery-search-advanced-link {
       display: flex;
       width: 100%;
       margin-top: 1em;
@@ -116,49 +105,49 @@
   /*Make Search Box Responsive*/
 
   @media (max-width: 767px) {
-      #discoverySearchForm>div>div {
+      #discovery-search-form>div>div {
           flex-wrap: wrap;
       }
-      #discoverySearchForm {
+      #discovery-search-form {
           padding: 0px;
       }
-      #discoverySearchFieldDropdown {
+      #discovery-search-index {
           border-radius: .25em;
           border: 1px solid #ccc;
           height: 2.25em;
           width: 6em;
           padding: 0;
       }
-      #discoverySearchFieldDropdown:after {
+      #discovery-search-index:after {
           content: '\f107';
           line-height: 2.75;
           font-size: .8em;
       }
-    #discoverySearchFieldDropdown #discoverySearchField {
+    #discovery-search-index #discovery-search-index-select {
           border: none;
           line-height: 2.25em;
           padding: 0 .5em 0;
       }
-      #discoverySearch {
+      #discovery-search {
           border-radius: .25em;
           margin: 0;
           height: 2.25em;
       }
-      #discoverySearchButton {
+      #discovery-search-button {
           height: 2em;
           margin: 0;
           padding: 0;
       }
-      #discoveryAdvancedSearchLink {
+      #discovery-search-advanced-link {
           justify-content: left;
       }
    }
 
   @media (max-width: 479px) {
-      #discoverySearchFieldDropdown {
+      #discovery-search-index {
           height: 2em;
       }
-      #discoverySearchButton {
+      #discovery-search-button {
           height: 2em;
           font-size: .9em;
       }
@@ -166,33 +155,33 @@
   </style>
 
 <!--WorldCat Discovery Search Box-->
-<label for="discoverySearch" class="sr-only">Discovery will search for books, articles, media, and more across all BSC Library collections.</label>
-  <section id="discoverySearch">
-    <form id="discoverySearchForm" role="search">
+
+  <div id="discovery-search-box">
+    <form id="discovery-search-form">
       <div style="display: flex; width: 100%; margin-top: 1em;">
         <div style="display: flex; flex-grow: 1;">
-          <label for="discoverySearchFieldDropdown" class="sr-only">Search Field Index. Choose a search field from the dropdown menu.</label>
-          <div id="discoverySearchFieldDropdown">
-            <select id="discoverySearchField">
+          <div id="discovery-search-index">
+            <select id="discovery-search-index-select">
               <option selected="selected" value="kw">Keyword</option>
               <option value="ti">Title</option>
               <option value="su">Subject</option>
               <option value="au">Author</option>
             </select>
           </div>
-        </div>
-        <label for="discoveryQueryString" class="control-label sr-only">Search Form Text Field: Enter term or terms to search.</label>
-        <input id="discoveryQueryString" type="text" autocomplete="off" required="You must enter a search term to search for books and media." placeholder="Search everything&mdash;books, articles, media, and more."/>
-        <button id="discoverySearchButton" type="submit" value="SEARCH"></button>
+          <input id="discovery-search" autocomplete="off" required="" placeholder="Search everything&mdash;books, articles, media, and more." type="text"/>
+          <input id="discovery-search-button" type="submit" value="SEARCH" />
       </div>
-      <label for="discoveryAdvancedSearchLink" class="control-label sr-only">Clicking on the link below will take you to the WorldCat Discovery Advanced Search page.</label>
-      <div id="discoveryAdvancedSearchLink">
+    </div>
+      <div id="discovery-search-advanced-link">
         <p><a href="https://bsclibrary.on.worldcat.org/advancedsearch" target="_blank" style="color: white; font-size: 1em; font-weight: normal;">Advanced Search</a></p>
       </div>
-    </form>
-  </section>
+  </form>
+</div>
+
+<!--End Discovery Search Box HTML-->
 
 <!--Javascript for WorldCat Discovery Search-->
+
 <script>
   (function(){var d,w,h,form,input,urlBase,active,facets,r,rt,a,f,select,query;
     d=document;
@@ -201,13 +190,13 @@
     }catch(e){return true;
     }})();
     rt=r?'_blank':'_self';
-    a=d.getElementById('discoveryAdvancedSearch');
+    a=d.getElementById('discovery-advanced-search');
     if(a)a.setAttribute('target',rt);
     h=function(e){if(e.keyCode&&e.keyCode!==13)return;
     };
-    form=d.getElementById('discoverySearchForm');
-    input=d.getElementById('discoveryQueryString');
-    select=d.getElementById('discoverySearchFields');
+    form=d.getElementById('discovery-search-form');
+    input=d.getElementById('discovery-search');
+    select=d.getElementById('discovery-search-index-select');
     urlBase = 'https://bsclibrary.on.worldcat.org/external-search?queryString=#T#&databaseList=199,239,283,3909,638&clusterResults=on&stickyFacetsChecked=off&changedFacet=stickyFacetsChecked&baseScope=wz%3A5766&sortKey=BEST_MATCH#F#';
     form.addEventListener('submit',function(e){e.preventDefault();
     e.stopPropagation();
@@ -219,4 +208,3 @@
     });
     })();
 </script>
-<!--End WorldCat Discovery Search Box-->
