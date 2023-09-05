@@ -1,0 +1,93 @@
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<style>
+#s-lg-widget-1641552251940,
+#s-lg-widget-1641552251940 * {
+    box-sizing: border-box!important;
+    margin: 0;
+    padding: 0;
+    text-align: left
+}
+
+#database-search-form {
+    position: relative;
+    width: auto;
+    padding: 1em 2em 2em;
+    background-color: transparent!important;
+    color: #333!important;
+    z-index: 1;
+    line-height: initial
+}
+
+#s-lg-guide-search-1641552251940 {
+	display: inline-block;
+	width: 100%;
+	height: 2.5em;
+	font-size: 1em;
+	padding: 0 0.5em;
+	color: black;
+	background-color: white;
+	border-radius:.25em;
+	border: 1px solid #ccc;
+}
+
+#database-search-button {
+    display: inline;
+    padding: .25em .5em;
+    font-size: 1em;
+    height: 2.5em;
+    width: 7em;
+    color: black;
+    background-color: #faaf00;
+  	margin-left: .5em;
+    border-radius: 0.25em;
+    border: none;
+    background-image: none;
+    float: none;
+    text-align: center
+}
+
+#database-search-button:hover {
+  	font-weight: bold;
+  	border: 1px solid white;
+    outline: 1px solid black;
+}
+
+#research-guides-list-link {
+	display: flex;
+	width: 100%;
+	margin-top: 1em;
+	justify-content: right;
+}
+
+@media (max-width: 767px) {
+	#database-search-form>div>div {
+		flex-wrap: wrap;
+	}
+    #database-search-form {
+        padding: 0px;
+    }
+}
+			</style>
+
+		<div id="s-lg-widget-1641552251940" class="s-lg-widget-search">
+				<form id="database-search-form" role="search" method="GET" action="https://library.bsc.edu/az.php" target="_blank">
+				<div style="display: flex; width: 100%; margin-top: 1em;">
+		     <div style="display: flex; flex-grow: 1;">
+						<label class="control-label sr-only" for="s-lg-guide-search-1641552251940">Guide Search Terms.</label>
+						<input class="s-lg-form-control" name="q" id="s-lg-guide-search-1641552251940"type="text" placeholder="Search for databases by title, keyword, or subject."/>
+					</div>
+					<button id="database-search-button" class="s-lg-btn-api-drop btn btn-default" type="submit">SEARCH</button>
+				</div>
+				<div>
+			</form>
+		</div>
+
+<script>
+	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+	if(!d.getElementById(id)){js=d.createElement(s);
+		js.id=id;js.src=p+"://lgapi-us.libapps.com/widgets.php?site_id=1169&widget_type=7&widget_embed_type=1&output_format=1&search_box_type=2&group_id=0&placeholder_text=Enter+Search+Words&button_text=SEARCH&widget_height=&widget_width=400&config_id=1641552251940";
+		fjs.parentNode.insertBefore(js,fjs);
+	}
+}(document,"script","s-lg-widget-script-1641552251940");
+</script>
