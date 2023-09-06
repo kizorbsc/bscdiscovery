@@ -1,0 +1,157 @@
+<header>
+	<div id="custom-header">      
+      <!-- Top bar-->
+		<div id="header-contacts">
+				<div class="container">
+					<div class="col-sm-6 hidden-xs">
+					<p>Contact us <a href="tel:+12052264740">205.226.4740</a> or <a href="mailto:libref@bsc.edu">libref@bsc.edu.</a></p>
+					</div>
+					<div class="col-sm-6">
+						<ul class="social-list-inline pull-right">
+						  <li><a href="https://facebook.com/bsc.librarians" target="_blank"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span class="sr-only">Library Facebook</span></a></li>
+						  <li><a href="http://bsclibraryblog.blogspot.com/" target="_blank"><i class="fa fa-fw fa-comment" aria-hidden="true"></i><span class="sr-only">Blog</span></a></li>
+						  <li><a href="https://twitter.com/library_bsc" target="_blank"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span class="sr-only">Library Twitter</span></a></li>
+						  <li><a href="https://www.youtube.com/channel/UCfPrAC0wlmdv398oOunKubg" target="_blank" aria-hidden="true"><i class="fa fa-fw fa-youtube-play"></i><span class="sr-only">Library Youtube</span></a></li>
+						  <li><a href="mailto:libref@bsc.edu"><i class="fa fa-fw fa-envelope" aria-hidden="true"></i><span class="sr-only">Email</span></a></li>
+						  <li class="visible-xs"><a href="tel:+12052264740"><i class="fa fa-fw fa-phone" aria-hidden="true"></i><span class="sr-only">Phone</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+      <!-- Top bar end-->		<!-- Navbar Start-->
+      <div class="nav-holder make-sticky">
+        <div id="navbar" role="navigation" class="navbar navbar-expand-lg">
+          <div class="container">
+          	<div class="navbar-header">
+          	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+          	<a href="/" class="navbar-brand home"><img src="https://libapps.s3.amazonaws.com/customers/1160/images/librarylogo.png" alt="BSC Library logo" class="img-responsive"><span class="sr-only">BSC Library: go to homepage</span></a>
+            
+            
+            </div>
+            <div id="navigation" class="navbar-collapse collapse">
+            
+              <ul class="nav navbar-nav ml-auto navbar-right">
+                
+                <li class="nav-item dropdown menu-large"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Research &amp; Finding <span class="caret"></span></a>
+                  <ul class="dropdown-menu megamenu">
+                    <li>
+                      <div class="row">
+                        <div class="col-md-6">
+<img src="https://libapps.s3.amazonaws.com/customers/1160/images/research-stylized.png" alt="" class="img-responsive hidden-xs hidden-sm"></div>
+                        <div class="col-md-3 col-sm-6">
+                          <h2>Find materials in our Library</h2>
+                          <ul class="list-unstyled mb-3">
+                            <li class="nav-item"><a href="https://bsclibrary.on.worldcat.org/advancedsearch?databaseList=283" class="nav-link" target="_blank">Search the Catalog</a></li>
+<li class="nav-item"><a href="https://bsclibrary.on.worldcat.org/atoztitles#journal" class="nav-link">Journals by Title</a></li>
+                            <li class="nav-item"><a href="/az.php" class="nav-link">Databases by Title</a></li>
+                            <li class="nav-item"><a href="/Database_Subject" class="nav-link">Databases by Subject</a></li>
+                            <li class="nav-item"><a href="https://bsclibrary.on.worldcat.org/courseReserves/landing" class="nav-link" target="_blank">Find Items on Reserve</a></li>
+                          </ul>
+					      <h2>Get materials from Other Libraries (Interlibrary Loan)</h2>
+                          <ul class="list-unstyled mb-3">
+                            <li class="nav-item"><a href="/research/ill" class="nav-link">Request a Book Through ILL</a></li>
+                            <li class="nav-item"><a href="/research/ill#s-lib-ctab-27819148-1" class="nav-link">Request an Article Through ILL</a></li>
+                            <li class="nav-item"><a href="/research/ill#s-lib-ctab-27819148-2" class="nav-link">Other Libraries</a></li>
+
+                          </ul>
+						  <h2>For Faculty &amp; Staff</h2>
+                          <ul class="list-unstyled mb-3">
+                            <li class="dropdown-item"><a href="/faculty-staff" class="nav-link">Contact a Librarian (Liaisons)</a></li>
+                    		<li class="dropdown-item"><a href="/research/faculty-staff" class="nav-link">Library Instruction</a></li>
+                    		<li class="dropdown-item"><a href="/research/faculty-staff#s-lib-ctab-27819155-1" class="nav-link">Place an Item on Reserve</a></li>
+							<li class="dropdown-item"><a href="/research/faculty-staff#s-lib-ctab-27819155-2" class="nav-link">Request a Purchase</a></li>
+							<li class="dropdown-item"><a href="/research/faculty-staff#s-lg-box-wrapper-32914016" class="nav-link">New Faculty Information</a></li>
+							<li class="nav-item"><a href="https://outlook.office365.com" class="nav-link">BSC Email</a></li>
+                            <li class="nav-item"><a href="https://thesis.bsc.edu:8190/Student/Account/Login" class="nav-link">Self-Service</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                         <h2>Rooms/Equipment</h2>
+                          <ul class="list-unstyled mb-3">
+                            <li class="nav-item"><a href="/research/rooms-equipment#s-lib-ctab-27819152-3" class="nav-link">Equipment Information</a></li>
+                            <li class="nav-item"><a href="/research/rooms-equipment#s-lib-ctab-27819152-1" class="nav-link">Reserve Equipment</a></li>
+                            <li class="nav-item"><a href="/research/rooms-equipment" class="nav-link">Reserve a Study Room</a></li>
+							<li class="nav-item"><a href="/research/rooms-equipment#s-lib-ctab-27819152-2" class="nav-link">3D Printing Request</a></li>
+                          </ul>
+                          <h2>Research Help</h2>
+                          <ul class="list-unstyled mb-3">
+                            <li class="dropdown-item"><a href="/guides" class="nav-link" >Research Guides</a></li>
+                    		<li class="dropdown-item"><a href="/research_faqs" class="nav-link" >Research FAQs</a></li>
+                    		<li class="dropdown-item"><a href="/research/help" class="nav-link">Make a Research Appointment</a></li>
+                          </ul>
+                          <h2>For Students</h2>
+                          <ul class="list-unstyled mb-3">
+                            <li class="dropdown-item"><a href="https://moodle.bsc.edu" class="nav-link" >Moodle</a></li>
+                    		<li class="dropdown-item"><a href="https://thesis.bsc.edu:8190/Student/Account/Login" class="nav-link">Self-Service</a></li>
+							<li class="dropdown-item"><a href="/research/help#s-lib-ctab-27819151-2" class="nav-link">New Student Information</a></li>
+                          </ul>
+
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown"><a href="javascript: void(0)" data-toggle="dropdown" class="dropdown-toggle">ARC <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="https://www.bsc.edu/academics/arc/index.html" class="nav-link">Tutoring</a></li>
+                    <li class="dropdown-item"><a href="https://www.bsc.edu/academics/arc/tutoring.html" class="nav-link">Math Lab</a></li>
+					<li class="dropdown-item"><a href="https://www.bsc.edu/academics/arc/centers.html" class="nav-link">Writing Center</a></li>
+                  </ul>
+                </li>
+				<li class="nav-item dropdown menu-large"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Archives/Digital Colls. <span class="caret"></span></a>
+                  <ul class="dropdown-menu megamenu">
+                    <li>
+                      <div class="row">
+                        <div class="col-md-6"><img src="https://libapps.s3.amazonaws.com/customers/1160/images/research-longroom.png" alt="Image of the Long Room at Trinity College Library" class="img-responsive hidden-xs hidden-sm"></div>
+                        <div class="col-md-3 col-sm-6">
+                          <h2>Archives</h2>
+                          <ul class="list-unstyled mb-3">
+                            <li class="nav-item"><a href="/archives/info" class="nav-link">BSC Archives Information</a></li>
+                            <li class="nav-item"><a href="/archives/finding-aids" class="nav-link">BSC Archives Finding Aids</a></li>
+                            <li class="nav-item"><a href="/archives/timeline" class="nav-link">BSC History (Timeline)</a></li>
+                            <li class="nav-item"><a href="/nac/archives" class="nav-link">North Alabama UMC Archives Information</a></li>
+                          </ul>
+					      <h2>Special Collections</h2>
+                          <ul class="list-unstyled mb-3">
+                            <li class="nav-item"><a href="/archives/special-collections" class="nav-link">BSC Special Collections Information and Finding Aids</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                          <h2>Digital Collections</h2>
+                          <ul class="list-unstyled mb-3">
+                            <li class="nav-item"><a href="https://digitalcollections.bsc.edu/omeka/exhibits/show/college-pubs" class="nav-link" target="_blank">College Publications</a></li>
+                            <li class="nav-item"><a href="https://digitalcollections.bsc.edu/omeka/exhibits/show/cruse-at-bsc" class="nav-link" target="_blank">Howard Cruse</a></li>
+							<li class="nav-item"><a href="https://digitalcollections.bsc.edu/omeka/exhibits/show/seventy-years-of-theatre" class="nav-link" target="_blank">Theatre</a></li>
+							<li class="nav-item"><a href="https://digitalcollections.bsc.edu/omeka/exhibits/show/thirty-years-of-service-learni" class="nav-link" target="_blank">Service-Learning</a></li>
+							<li class="nav-item"><a href="https://digitalcollections.bsc.edu/omeka/exhibits/show/provost-forum" class="nav-link" target="_blank">Provost Forums</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+				<li class="nav-item dropdown"><a href="javascript: void(0)" data-toggle="dropdown" class="dropdown-toggle">General Info. <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="/general-info/hours" class="nav-link">Hours</a></li>
+                    <li class="dropdown-item"><a href="https://www.google.com/maps/place/Birmingham-Southern+College/@33.517998,-86.855206,15z/data=!4m9!1m2!2m1!1sbsc+library!3m5!1s0x88891c45e0215555:0xcc723ea8efbfa1fa!8m2!3d33.5159411!4d-86.8510103!15sCgtic2MgbGlicmFyeZIBB2NvbGxlZ2U?hl=en" class="nav-link" target="_blank">Directions</a></li>
+                    <li class="dropdown-item"><a href="/general-info/policies" class="nav-link">Policies</a></li>
+					<li class="dropdown-item"><a href="/general-info/guest-info" class="nav-link">Guest Information</a></li>
+					<li class="dropdown-item"><a href="/general-info/about-the-library " class="nav-link">About the Library</a></li>
+					<li class="dropdown-item"><a href="/faculty-staff" class="nav-link">Meet the Library Faculty/Staff</a></li>
+					<li class="dropdown-item"><a href="/general-info/giving" class="nav-link">Giving to the Library</a></li>
+					<li class="dropdown-item"><a href="https://bsc.edu" class="nav-link">Main BSC Site</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</header>
