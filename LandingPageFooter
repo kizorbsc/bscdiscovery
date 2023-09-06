@@ -1,0 +1,62 @@
+<footer>
+<div id="custom-footer">
+	<div id="footer-connect">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<h2>Still haven't found what you're looking for?</h2>
+				</div>
+				<div class="col-md-4">
+					<a href="/research/help" class="btn btn-footer" id="btn-library-footer">Connect with a Reference Librarian</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer-links">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h3>Birmingham-Southern College</h3>
+					<ul class="BSC-links">
+						<li><a href="https://www.bsc.edu/admission/index.html">Future Students</a></li>
+						<li><a href="https://www.bsc.edu/current.html">Current Students</a></li>
+						<li><a href="https://www.bsc.edu/alumni/index.html">Alumni</a></li>
+						<li><a href="https://www.bsc.edu/parents/index.html">Parents & Family</a></li>
+						<li><a href="https://www.bsc.edu/faculty.html">Faculty & Staff</a></li>
+						<li><a href="https://www.bsc.edu/emergency/index.html">Emergency Information</a></li>
+						<li><a href="https://www.bsc.edu/_images/home/BSC-privacy-policy-002.pdf">Privacy Policy</a></li>
+						<li><a href="https://www.bsc.edu/policies/president/BSC%20Non-Discrimination%20Policy.pdf">Non-Discrimination Policy</a></li>
+						<li><a href="https://www.bsc.edu/programs.html">Degrees & Programs</a></li>
+						<li><a href="https://www.bsc.edu/calendar/index.html">Calendar</a></li>
+						<li><a href="https://www.bsc.edu/peoplefinder.html">Directory</a></li>
+						<li><a href="https://www.bsc.edu/about/map.html">Campus Map</a></li>
+						<li><a href="https://www.bsc.edu/advancement/index.html">Give to BSC</a></li>
+						<li><a href="https://www.bsc.edu/titleix/needhelp.html">Need Help?</a></li>
+						<li><a href="https://www.bsc.edu/administration/humanresources/careersbsc.html">Careers at BSC</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h3>Write or Call</h3>
+					<p>900 Arkadelphia Rd.<br>
+					Birmingham, AL 35254<br>
+					<a href="tel:+18005235793">800.523.5793</a></p>
+					<hr>
+					<p>Follow @BirmimghamSouthern</p>
+					<ul class="BSC-social-links">
+						<li><a href="https://www.facebook.com/birminghamsouthern" target="_blank"><i class="fa fa-facebook-f fa-2x fa-fw" aria-hidden="true"></i><span class="sr-only">BSC Facebook</span></a></li>
+						<li><a href="https://twitter.com/FromTheHilltop" target="_blank"><i class="fa fa-twitter fa-2x fa-fw" aria-hidden="true"></i><span class="sr-only">BSC Twitter</span></a></li>
+						<li><a href="http://vimeo.com/birminghamsouthern" target="_blank"><i class="fa fa-vimeo fa-2x fa-fw" aria-hidden="true"></i><span class="sr-only">BSC Vimeo</span></a></li>
+						<li><a href="https://www.flickr.com/photos/90113815@N06/albums" target="_blank"><i class="fa fa-flickr fa-2x fa-fw" aria-hidden="true"></i><span class="sr-only">BSC Flickr</span></a></li>
+						<li><a href="http://www.youtube.com/user/BirminghamSouthern" target="_blank"><i class="fa fa-youtube fa-2x fa-fw" aria-hidden="true"></i><span class="sr-only">BSC YouTube</span></a></li>
+						<li><a href="http://instagram.com/birminghamsouthern" target="_blank"><i class="fa fa-instagram fa-2x fa-fw" aria-hidden="true"></i><span class="sr-only">BSC Instagram</span></a></li>
+					</ul>
+					<a href="https://bsc.edu/" class="btn btn-footer" id="btn-website-footer">Visit the BSC Website</a>
+				</div>
+				<div class="col-md-3">
+					<img src="https://libapps.s3.amazonaws.com/customers/1160/images/AdmissionsSeal.png" alt="seal of Birmingham-Southern College">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</footer>
