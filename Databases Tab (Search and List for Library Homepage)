@@ -211,7 +211,7 @@
       <option value="http://ezproxy.bsc.edu/login?url=https://www.csmusic.net/">CS Music</option>
       <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/DLBC?u=birm89742">Dictionary of Literary Biography</option>
       <option value="https://library.bsc.edu/digital_theatre">Digital Theatre+</option>
-      <option value="https://docsouth.unc.edu/">Documenting the American South (DocSouth)</option>
+      <option value="https://docsouth.unc.edu/">Documenting the American South</option>
       <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;authtype=ip&amp;db=e000xna">EBSCO eBooks Academic Collection</option>
       <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;authtype=ip&amp;db=ndh">EBSCO Nonfiction Collection</option>
       <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;authtype=ip&amp;db=nlebk">EBSCOhost Ebooks</option>
@@ -238,7 +238,9 @@
       <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/PROF?u=birm89742">Gale OneFile: Educator's Reference Complete</option>
       <option value="http://ezproxy.bsc.edu/login?url=https://go.gale.com/ps/start.do?p=PPFA&amp;u=birm89742">Gale OneFile: Fine Arts</option>
       <option value="http://ezproxy.bsc.edu/login?url=https://go.gale.com/ps/start.do?p=GPS&amp;u=birm89742">Gale Power Search</option>
+      <option value="http://www.getty.edu/Search/">Getty Databases</option>
       <option value="http://www.getty.edu/publications/virtuallibrary">Getty Publications Virtual Library</option>
+      <option value="https://portal.getty.edu/">Getty Research Portal</option>
       <option value="http://books.google.com/">Google Books</option>
       <option value="http://scholar.google.com">Google Scholar</option>
       <option value="http://ezproxy.bsc.edu/login?url=http://firstsearch.oclc.org/dbname=GPO;done=http:/www.bsc.edu/library;FSIP">GPO Monthly Catalog</option>
