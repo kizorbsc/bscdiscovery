@@ -195,7 +195,6 @@
       <option value="http://ezproxy.bsc.edu/login?=https://www.webofscience.com/wos/alldb/basic-search
       <option value="http://www.al.com/birmingham">Birmingham News</option>
       <option value="https://www.bloomsburycollections.com/search?newSearchRecord&amp;browse&amp;product=bloomsburyOpenAccess">Bloomsbury Open Access Ebook Collection</option>
-      <option value="http://ezproxy.bsc.edu/login?url=http://www.booksinprint.com">Books In Print</option>
       <option value="http://ezproxy.bsc.edu/login?url=http://search.eb.com/">Britannica Academic</option>
       <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/BIE?u=birm89742">Business Insights Essentials</option>
       <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;authtype=ip&amp;db=buh">Business Source Premier</option>
@@ -206,7 +205,6 @@
       <option value="http://ezproxy.bsc.edu/login?url=http://www.churchillarchive.com">Churchill Archive</option>
       <option value="http://ezproxy.bsc.edu/login?url=http://firstsearch.oclc.org/;dbname=ClasePeriodica;done=http://www.bsc.edu/library;FSIP">ClasePeriodica</option>
       <option value="http://ezproxy.bsc.edu/login?url=https://clavis.brepols.net/clacla/OA/Browse/Authors.aspx">Clavis Clavium</option>
-      <option value="http://ezproxy.bsc.edu/login?url=https://library.cqpress.com/cqresearcher">CQ Researcher</option>
       <option value="http://ezproxy.bsc.edu/login?url=http://www.credoreference.com">Credo Reference</option>
       <option value="http://ezproxy.bsc.edu/login?url=https://www.csmusic.net/">CS Music</option>
       <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/DLBC?u=birm89742">Dictionary of Literary Biography</option>
@@ -262,7 +260,6 @@
       <option value="http://ezproxy.bsc.edu/login?url=http://bsc.kanopystreaming.com">Kanopy</option>
       <option value="http://ezproxy.bsc.edu/login?url=http://infotrac.galegroup.com/itweb/birm89742?db=LT">LegalTrac</option>
       <option value="http://ezproxy.bsc.edu/login?url=http://web2.infotrac.galegroup.com/itw/infomark/0/1/1/purl=rc6_CLC?sw_aep=birm89742">Literature Criticism Online</option>
-      <option value="http://literature.proquest.com.ezproxy.bsc.edu/">Literature Online (LION)</option>
       <option value="http://ezproxy.bsc.edu/login?url=http://find.galegroup.com.ezproxy.bsc.edu/menu/start?prod=litrc-31&amp;usergroupname=birm89742">Literature Resource Center</option>
       <option value="http://ezproxy.bsc.edu/login?url=http://go.galegroup.com/ps/start.do?p=LITF&amp;u=(birm89742)&amp;authCount=1&amp;aty=ip">LitFinder</option>
       <option value="http://ezproxy.bsc.edu/login?url=http://search.ebscohost.com/login.asp?profile=web&amp;defaultdb=ulh">MAS Ultra - School Edition</option>
@@ -322,7 +319,6 @@
       <option value="http://ezproxy.bsc.edu/login?url=https://journals.sagepub.com/">Sage Journals</option>
       <option value="http://ezproxy.bsc.edu/login?url=https://www.science.org/journal/science">Science</option>
       <option value="http://www.science.gov/">Science.gov</option>
-      <option value="http://ezproxy.bsc.edu/login?url=http://sciencedirect.com/">ScienceDirect</option>
       <option value="http://ezproxy.bsc.edu/login?url=http://search.ebscohost.com/login.aspx?profile=ehost&amp;defaultdb=sla">Slavery &amp; Abolition, 1789-1887</option>
       <option value="http://ezproxy.bsc.edu/login?url=http://heinonline.org/HOL/Index?collection=slavery&amp;set_as_cursor=clear">Slavery in America and the World: History, Culture &amp; Law</option>
       <option value="http://ezproxy.bsc.edu/login?url=https://www.proquest.com/socscijournals?accountid=8631">Social Science Database</option>
