@@ -327,6 +327,7 @@
       <option value="http://ezproxy.bsc.edu/login?url=https://statabs.proquest.com">Statistical Abstract of the US</option>
       <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/G-Twayne?u=birm89742">Twayne's Authors Series</option>
       <option value="http://ezproxy.bsc.edu/login?url=https://www.proquest.com/usnews?accountid=8631">U.S. Newsstream</option>
+      <option value="http://ezproxy.bsc.edu/login?url=https://www.proquest.com/hispanicnews?accountid=8631">U.S. Hispanic Newsstream</option>
       <option value="http://ovidsp.ovid.com/ovidweb.cgi?T=JS&amp;NEWS=n&amp;CSC=Y&amp;ID=avlib999&amp;PASSWORD=welcome1&amp;PAGE=main&amp;D=huaa20">Visible Body</option>
       <option value="http://ezproxy.bsc.edu/login?url=https://www.webofscience.com">Web of Science</option>
       <option value="https://data.worldbank.org/">World Bank Open Data</option>
