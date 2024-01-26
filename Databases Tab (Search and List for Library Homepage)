@@ -291,7 +291,6 @@
       <option value="http://ezproxy.bsc.edu/login?url=http://search.proquest.com/pais?accountid=8631">PAIS International and PAIS Archives</option>
       <option value="http://ezproxy.bsc.edu/login?url=http://firstsearch.oclc.org/;dbname=PapersFirst;done=http://www.bsc.edu/library;FSIP">Papers First</option>
       <option value="http://ezproxy.bsc.edu/login?url=http://search.ebscohost.com/login.aspx?profile=ehost&amp;defaultdb=phl">Philosopher's Index</option>
-      <option value="http://ezproxy.bsc.edu/login?url=http://search.proquest.com/physicaleducation?accountid=8631">Physical Education Index</option>
       <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;authtype=ip&amp;db=pwh">Points of View Reference Center</option>
       <option value="http://www.loc.gov/pictures/">Prints &amp; Photographs Online Catalog (PPOC)</option>
       <option value="http://ezproxy.bsc.edu/login?url=http://firstsearch.oclc.org/;dbname=Proceedings;done=http://www.bsc.edu/library;FSIP">ProceedingsFirst</option>
