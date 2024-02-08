@@ -233,10 +233,19 @@
       <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/MSIC?u=birm89742">Gale In Context: Middle School</option>
       <option value="https://link-gale-com.ezproxy.bsc.edu/apps/CA/?u=avlr&amp;id=alabama2r">Gale Literature: Contemporary Authors</option>
       <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/G-Scrib?u=birm89742">Gale Literature: Scribner Writers Series</option>
-      <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/ITBC?u=birm89742">Gale OneFile Business</option>
+      <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/PPAG?u=birm89742">Gale OneFile: Agriculture</option>
+      <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/ITBC?u=birm89742">Gale OneFile: Business</option>
       <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/PPCM?u=birm89742">Gale OneFile: Communications and Mass Media Collection</option>
+      <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/PPCA?u=birm89742">Gale OneFile: Culinary Arts</option>
       <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/PROF?u=birm89742">Gale OneFile: Educator's Reference Complete</option>
       <option value="http://ezproxy.bsc.edu/login?url=https://go.gale.com/ps/start.do?p=PPFA&amp;u=birm89742">Gale OneFile: Fine Arts</option>
+      <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/PPGL?u=birm89742">Gale OneFile: Gardening & Horticulture</option>
+      <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/STOM?u=birm89742">Gale OneFile: High School Edition</option>
+      <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/PPHI?u=birm89742">Gale OneFile: Home Improvement</option>
+      <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/PPTH?u=birm89742">Gale OneFile: Hospitality & Tourism</option>
+      <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/IFME?u=birm89742">Gale OneFile: Informe Académico</option>
+      <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/PPGS?u=birm89742">Gale OneFile: Science</option>
+      <option value="http://ezproxy.bsc.edu/login?url=https://link.gale.com/apps/PPVC?u=birm89742">Gale OneFile: Vocations and Careers</option>
       <option value="http://ezproxy.bsc.edu/login?url=https://go.gale.com/ps/start.do?p=GPS&amp;u=birm89742">Gale Power Search</option>
       <option value="http://www.getty.edu/Search/">Getty Databases</option>
       <option value="http://www.getty.edu/publications/virtuallibrary">Getty Publications Virtual Library</option>
