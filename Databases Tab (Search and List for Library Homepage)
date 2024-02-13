@@ -341,6 +341,7 @@
       <option value="http://ezproxy.bsc.edu/login?url=https://www.proquest.com/hispanicnews?accountid=8631">U.S. Hispanic Newsstream</option>
       <option value="http://ovidsp.ovid.com/ovidweb.cgi?T=JS&amp;NEWS=n&amp;CSC=Y&amp;ID=avlib999&amp;PASSWORD=welcome1&amp;PAGE=main&amp;D=huaa20">Visible Body</option>
       <option value="http://ezproxy.bsc.edu/login?url=https://www.webofscience.com">Web of Science</option>
+      <option value="http://ezproxy.bsc.edu/login?url=http://www.onlinelibrary.wiley.com/">Wiley Online Library</option>
       <option value="https://data.worldbank.org/">World Bank Open Data</option>
       <option value="http://ezproxy.bsc.edu/login?url=http://firstsearch.oclc.org/dbname=WorldCat;done=http://www.bsc.edu/library;FSIP">WorldCat -- BSC Subscription</option>
       <option value="http://www.worldcat.org/">WorldCat -- Free</option>
