@@ -280,6 +280,7 @@
       <option value="http://ezproxy.bsc.edu/login?url=http://www.ams.org/mathscinet">MathSciNet (via AMS)</option>
       <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;authtype=ip&amp;db=msn">MathSciNet (via EBSCOhost)</option>
       <option value="http://medlineplus.gov/">Medline Plus</option>
+      <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&scope=site&db=e866swwh">Middle Search Plus</option>
       <option value="http://ezproxy.bsc.edu/login?url=http://search.ebscohost.com/login.asp?profile=web&amp;defaultdb=mth">Military and Government Collection</option>
       <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;authtype=ip,uid&amp;db=kah">MLA Directory of Periodicals</option>
       <option value="http://ezproxy.bsc.edu/login?url=https://search.ebscohost.com/login.asp?direct=true&amp;authtype=ip&amp;db=mzh">MLA International Bibliography</option>
